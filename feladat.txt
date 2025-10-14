@@ -1,0 +1,22 @@
+Készíts egy Java nyelven írt, önállóan futtatható WEB-es alkalmazást amely :
+
+- beolvassa az employee.xml-t
+- és a következő három HTTP GET REST endpoint-ja van: 	
+	- /rest/employees		
+		JSON formátumú listában, rendezetten kiírja a dolgozók (employee) nevét. Keresztnév + vezetéknév szerint legyen rendezve. 
+		A többször szereplő dolgozókat csak egyszer írja ki.
+	-/rest/employees?department={department}
+		JSON formátumúlistában, rendezetten kiírja csak azokat a dolgozókat amelyek a{department} paraméterként megadott osztályhoz (department) tartoznak. 
+		Keresztnév + vezetéknév szerint legyen rendezve ez is.
+		A többször szereplő dolgozókat csak egyszer írja ki.
+	-/rest/employees/groupby/department
+		JSON formátumú listában kiírja a dolgozókat (employee) osztályok szerint (department).
+		Department + keresztnév + vezetéknév szerint legyen rendezve.
+		A többször szereplő dolgozókat csak egyszer írja ki, de ha több osztályhoz is tartoznak, akkor mindegyikhez.
+	- Írj Java-doc-ot.
+	- Írj hozzá Junit teszteket.
+	- Írj egy rövid használati útmutatót arról hogyan kell parancssorból telepíteni és futtatni. 
+	- Maven-t vagy Gradle-t használj.
+	- Használj 8 vagy magasabb JAVA verziót. Írd meg milyen Java verzióval dolgoztál.
+	- Eclipse-be vagy Intelij-be lehessen importálni.
+	- Tömörítsd .zip fileba csak a forrás kódot (.jar-kat egyéb libeket ne tegyél bele) és küld el nekünk emailben.

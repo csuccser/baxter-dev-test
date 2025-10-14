@@ -1,0 +1,33 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "BaxTechDevTest",
+    "buildTool": "maven",
+    "cacheProvider": "no",
+    "clientFramework": "no",
+    "clientTestFrameworks": null,
+    "clientTheme": null,
+    "creationTimestamp": 1760451330322,
+    "databaseType": "no",
+    "devDatabaseType": null,
+    "enableHibernateCache": null,
+    "enableTranslation": false,
+    "entities": [],
+    "feignClient": null,
+    "jhipsterVersion": "8.11.0",
+    "jwtSecretKey": "M2FjZGZjOTBiMDlhOWY2MzJhM2RmYWM5ZDcwYmM2OTk3M2YxMGFlYjViOGMxZDQ4YjRlODQyYmJiNjk2NGUwNDAxOGIwMzc4Mzc5MjQzYTYwM2I5ODQ0ZDllMmU2NzI4YThlYzE5ZGU4Mjk4N2E3Njg2OGJhNDc3NTU4NzBiZWY=",
+    "microfrontend": null,
+    "microfrontends": [],
+    "nativeLanguage": "en",
+    "packageName": "hu.baxtech",
+    "prodDatabaseType": null,
+    "reactive": false,
+    "serverPort": null,
+    "serviceDiscoveryType": null,
+    "skipClient": true,
+    "syncUserWithIdp": null,
+    "testFrameworks": ["gatling"],
+    "withAdminUi": null
+  }
+}
