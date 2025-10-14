@@ -3,25 +3,20 @@
                              https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>hu.baxtech</groupId>
-    <artifactId>bax-tech-dev-test</artifactId>
+    <groupId>hu.baxter</groupId>
+    <artifactId>baxter-dev-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
-    <name>Bax Tech Dev Test</name>
-    <description>Description for Bax Tech Dev Test</description>
+    <packaging>war</packaging>
+    <name>Baxter Dev Test</name>
+    <description>Description for Baxter Dev Test</description>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.4.5</version>
         <relativePath/>
-        <!-- lookup parent from repository -->
     </parent>
 
     <properties>
-        <!--
-            Build properties
-            The spring-boot version should match the one managed by https://mvnrepository.com/artifact/tech.jhipster/jhipster-dependencies/${jhipster-dependencies.version}
-        -->
         <maven.version>3.2.5</maven.version>
         <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,7 +24,7 @@
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <start-class>hu.baxtech.BaxTechDevTestApp</start-class>
+        <start-class>hu.baxter.BaxTechDevTestApp</start-class>
         <argLine>-Djava.security.egd=file:/dev/./urandom -Xmx1G</argLine>
         <m2e.apt.activation>jdt_apt</m2e.apt.activation>
         <run.addResources>false</run.addResources>
