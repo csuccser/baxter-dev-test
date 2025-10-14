@@ -3,8 +3,6 @@
 #
 # This configuration overrides the application.yml file.
 #
-# More information on profiles: https://www.jhipster.tech/profiles/
-# More information on configuration properties: https://www.jhipster.tech/common-application-properties/
 # ===================================================================
 
 # ===================================================================
@@ -17,7 +15,7 @@ logging:
   level:
     ROOT: INFO
     tech.jhipster: INFO
-    hu.baxtech: INFO
+    hu.baxter: INFO
 
 management:
   prometheus:

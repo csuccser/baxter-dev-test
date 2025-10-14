@@ -13,6 +13,6 @@ import org.springframework.boot.test.context.SpringBootTest;
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@SpringBootTest(classes = { BaxTechDevTestApp.class, JacksonConfiguration.class, AsyncSyncConfiguration.class })
+@SpringBootTest(classes = { BaxterDevTestApp.class, JacksonConfiguration.class, AsyncSyncConfiguration.class })
 public @interface IntegrationTest {
 }

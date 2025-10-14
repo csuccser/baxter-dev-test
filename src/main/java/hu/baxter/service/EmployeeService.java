@@ -83,7 +83,7 @@ public class EmployeeService {
                 for (int j = 0; j < departmentNodes.getLength(); j++) {
                     final Node departmentNode = departmentNodes.item(j);
                     final String departmentName = departmentNode.getTextContent();
-                    LOG.info("{} {}", departmentName, employeeName);
+                    LOG.debug("{} {}", departmentName, employeeName);
                     allEmployeeAndDepartment.add(new EmployeeDepartmentMappingDto(departmentName, employeeName));
                 }
             }
