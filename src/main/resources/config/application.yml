@@ -26,7 +26,7 @@ springdoc:
 ---
 spring:
   application:
-    name: BaxTechDevTest
+    name: BaxterDevTest
   profiles:
     # The commented value for `active` can be replaced with valid Spring profiles to load.
     # Otherwise, it will be filled in by maven when building the JAR file
@@ -98,7 +98,7 @@ info:
 
 jhipster:
   clientApp:
-    name: 'baxTechDevTestApp'
+    name: 'baxterDevTestApp'
   # By default CORS is disabled. Uncomment to enable.
   # cors:
   #   allowed-origins: "http://localhost:8100,http://localhost:9000"
@@ -108,7 +108,7 @@ jhipster:
   #   allow-credentials: true
   #   max-age: 1800
   mail:
-    from: BaxTechDevTest@localhost
+    from: BaxterDevTest@localhost
   api-docs:
     default-include-pattern: /api/**
     management-include-pattern: /management/**
