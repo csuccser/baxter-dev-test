@@ -33,6 +33,10 @@ public class EmployeeService {
         this.xpath = XPathFactory.newInstance().newXPath();
     }
 
+    /**
+     * Lists all employees distinctly.
+     * @return List of employees
+     */
     public List<EmployeeDto> getAllEmployees() {
         try {
             final List<EmployeeDto> res = new LinkedList<>();
@@ -49,6 +53,11 @@ public class EmployeeService {
         }
     }
 
+    /**
+     * List all employees filtered by department distinctly.
+     * @param department to be filtered by this param
+     * @return List of employees
+     */
     public List<EmployeeDto> getEmployeesByDepartment(String department) {
         try {
             final List<EmployeeDto> res = new LinkedList<>();
@@ -67,6 +76,10 @@ public class EmployeeService {
     }
 
 
+    /**
+     * List employees grouped by departments.
+     * @return List of departments.
+     */
     public List<DepartmentDto> getEmployeesGroupedByDepartment() {
         try {
             final List<EmployeeDepartmentMappingDto> allEmployeeAndDepartment = new LinkedList<>();

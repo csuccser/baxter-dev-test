@@ -24,6 +24,8 @@ public class XmlDataSourceConfig {
         this.resourceLoader = resourceLoader;
     }
 
+
+    /** Loads the xml datasource */
     @Bean
     public Document xmlDocument() {
         try {

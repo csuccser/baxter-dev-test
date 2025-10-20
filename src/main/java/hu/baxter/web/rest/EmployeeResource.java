@@ -24,6 +24,11 @@ public class EmployeeResource {
         this.employeeService = employeeService;
     }
 
+    /**
+     * Lists employees. Employees can be filtered by department.
+     * @param department - optional, can be used to filter employees
+     * @return
+     */
     @GetMapping("")
     public ResponseEntity<List<EmployeeDto>> getEmployees(@RequestParam(required = false) String department) {
         final List<EmployeeDto>  employees;
@@ -35,6 +40,10 @@ public class EmployeeResource {
         return new ResponseEntity<>(employees, HttpStatus.OK);
     }
 
+    /**
+     * List employees grouped by departments.
+     * @return
+     */
     @GetMapping("/groupby/department")
     public ResponseEntity<List<DepartmentDto>> getEmployeesGroupedByDepartment() {
         final List<DepartmentDto> employeesByDepartment = employeeService.getEmployeesGroupedByDepartment();
